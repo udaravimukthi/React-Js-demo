@@ -9,7 +9,7 @@ function NameListItem(props){
                <img src={props.avatar} alt= {props.name} className="border border-dark rounded-circle shadow-sm
                " />
                </div>
-             <div claasName="col-10">
+             <div className="col-10">
                <h4> {props.name} </h4>
                <p>
                {props.city} | {props.email}
