@@ -3,11 +3,25 @@ import moment from 'moment';
 
 function NameListItem(props){
     return (
-           <li>
-             <p><img src={props.avatar} alt= {props.name} /> {props.name}</p>
-             <p>City:{props.city} </p>{}
-             <p>Email:{props.email}</p>
-             <p>Birthday:{moment(props.birthday).format('DD-MM-YYYY')}</p>
+           <li className= "list-group-item shadow-sm">
+             <div className="row align-items-center">
+               <div className="col-2">
+               <img src={props.avatar} alt= {props.name} className="border border-dark rounded-circle shadow-sm
+               " />
+               </div>
+             <div claasName="col-10">
+               <h4> {props.name} </h4>
+               <p>
+               {props.city} | {props.email}
+               </p>
+             <small>
+             {moment(props.birthday).format('DD-MM-YYYY')}
+             </small>
+             
+             </div>
+             
+             </div>
+            
              </li>
     );
     

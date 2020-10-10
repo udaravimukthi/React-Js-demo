@@ -48,9 +48,9 @@ const nameListComponent = () => {
 
 return (
      <React.Fragment>
-         <h1>Name List</h1>
-         <hr />
+       <div className= "container mt-4">
          <ul>{nameListComponent()}</ul>
+         </div>
      </React.Fragment>
 
     );
