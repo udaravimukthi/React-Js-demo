@@ -33,7 +33,12 @@ function NameList(){
   ]);
 
 useEffect(()  => {
-  console.log('Render method called');
+  fetch('https://randomuser.me/api').then((response) => {
+    return response.json();
+
+  }).then(responseData => {
+       console.log(responseData);
+  });
 });
   
 
