@@ -2,7 +2,8 @@ import React, {useState , useEffect} from  'react';
 import NameListItem from './NameListItem';
 
 function NameList(){
-
+  
+  const [loadData, setLoadData] = useState(new Date());
   const [nameList, setNameList] = useState( [ 
     {
       id:1,
@@ -37,9 +38,9 @@ useEffect(()  => {
     return response.json();
 
   }).then(responseData => {
-       console.log(responseData);
+       setNameList((nameList) => [...nameList, responseData.results[0]]);
   });
-});
+}, [loadData]);
   
 
 const nameListComponent = () => {
@@ -59,16 +60,7 @@ const nameListComponent = () => {
 };
 
 const addUserHandler =() => {
-  const newUser = {
-    id: new Date(),
-      name: { title: 'mrs',first: 'www',last: 'errr'},
-      location: {city: 'vvffr'},
-      email: 'mple.com',
-      dob: { date: '1999-05-20T09:44:18.674Z',age: 26 },
-      picture: { medium: 'https://randomuser.me/api/portraits/med/women/7.jpg'},
-  };
-
-  setNameList((nameList)=> [...nameList, newUser]);
+  setLoadData(new Date());
 };
    
 
