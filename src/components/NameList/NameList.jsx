@@ -1,4 +1,4 @@
-import React, {useState} from  'react';
+import React, {useState , useEffect} from  'react';
 import NameListItem from './NameListItem';
 
 function NameList(){
@@ -28,8 +28,13 @@ function NameList(){
       email: 'mple.com',
       dob: { date: '1999-05-20T09:44:18.674Z',age: 26 },
       picture: { medium: 'https://randomuser.me/api/portraits/med/women/7.jpg'},
+
     },
   ]);
+
+useEffect(()  => {
+  console.log('Render method called');
+});
   
 
 const nameListComponent = () => {
@@ -50,7 +55,7 @@ const nameListComponent = () => {
 
 const addUserHandler =() => {
   const newUser = {
-    id: 4,
+    id: new Date(),
       name: { title: 'mrs',first: 'www',last: 'errr'},
       location: {city: 'vvffr'},
       email: 'mple.com',
