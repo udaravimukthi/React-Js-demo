@@ -5,7 +5,7 @@ function About(){
         <React.Fragment>
             <div className="container mt-4">
                 <h3>About</h3>
-                <p>skkkkkwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwkkkkkkkkkkkkkkkkkkkdddddddddddddddddddkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+                <p>skkkkkwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
             </div>
         </React.Fragment>
     );
