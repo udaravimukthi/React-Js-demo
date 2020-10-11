@@ -5,7 +5,7 @@ function Home(){
         <React.Fragment>
             <div className="container mt-4">
                 <h3>Welcome</h3>
-                <p>skkkkkwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwkkkkkkkkkkkkkkkkkkkdddddddddddddddddddkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+                <p>sddddddddkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
             </div>
         </React.Fragment>
     );
